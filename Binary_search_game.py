@@ -20,7 +20,7 @@ def main ():
 	sorted_list = sorted(range_of_num)
 
 	count = 0
-	limit = 5 # adjust this number to change the number of attempts
+	limit = 4 # adjust this number to change the number of attempts
 	
 	# print ('lucky_num:', lucky_num)
 	text = "\nYou have {} total attempts to find the lucky number. Use [q] to quit".format(limit - 1)
@@ -63,10 +63,7 @@ def main ():
 			break
 		
 		if guess != lucky_num:
-			if less_than_half:
-				sorted_list = sorted_list [:index_half]
-			else:
-				sorted_list = sorted_list [index_half:]
+			sorted_list = sorted_list[:index_half] if less_than_half else sorted_list[index_half:]
 		else:
 			print()
 			print('You Won!')
@@ -92,5 +89,4 @@ def main ():
 		print ('Halved list:', sorted_list)
 	print ("Number of attempt(s): {}".format(count))
 
-if __name__ == "__main__":
-	main()
+main() if __name__ == '__main__' else None
