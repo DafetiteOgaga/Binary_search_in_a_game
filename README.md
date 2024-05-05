@@ -1,6 +1,8 @@
-# The aim of this program is to demonstrate the working principle of Binary Search Algorithm.
+# The Binary Search Game.
 
-## This is a number guessing game where the player needs to guess the randomly selected "lucky number" from a shuffled list of numbers.
+## The aim of this program is to demonstrate the working principle of Binary Search Algorithm.
+
+### This is a number guessing game where the player needs to guess the randomly selected "lucky number" from a shuffled list of numbers.
 
 - #### randomList() is used to generate n unique random numbers (adjustable).
 - #### This list is shuffled to randomize their order.
